@@ -1,0 +1,22 @@
+Avalanche verification — 12 October 2026
+
+Responsive update: checked 320, 390, 768 and 1366px browser viewports.
+No horizontal overflow; all 12 pit inputs present at each size.
+Every visible input, select and button measured at least 44px tall.
+Solver ran at phone and desktop sizes; completed results and highlight displayed.
+This is browser viewport testing, not testing on physical mobile hardware.
+
+JavaScript syntax check passed.
+40 search comparisons matched an independent unpruned depth-4 minimax oracle.
+1,994 legal moves matched an independent 13-location relay-route implementation.
+Simulated moves conserved stones across 40 games.
+Fixtures cover relay pickups, no captures, skipped opponent store and extra turns.
+A six-stone endgame was solved to depth 22: close-win mode chose Pit 2,
+with minimax margin +4; strongest-margin mode chose Pit 6, with margin +6.
+A shallow opening search correctly remained unsolved and did not apply close-win selection.
+Browser checks verified both strategy results, board mapping, worker search,
+input invalidation, cancellation and reset. Console checks returned no errors.
+
+Tested on a local HTTP server in the desktop browser. Not a physical iPhone
+or a live GitHub Pages deployment. The implemented terminal scoring convention
+is documented in README.md.
